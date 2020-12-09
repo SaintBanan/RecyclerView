@@ -11,12 +11,11 @@ public class BallValve {
     }
 
     BallValve(String name, String manufacturer, String material, String lever) {
-        count++;
         this.manufacturer = manufacturer;   //Производитель
         this.material = material;           //Материал
         this.lever = lever;                 //Тип рукоятки
         this.name = name;
-        id = count;
+        id = ++count;
     }
 
     //Получить наименование товара
@@ -31,6 +30,6 @@ public class BallValve {
 
     //Получить характеристики товара в виде строки
     public String getFeatures() {
-        return String.format("Характеристики:\n Производитель: %s\n Материал: %s\n Рукоятка: %s", manufacturer, material, lever);
+        return String.format("Характеристики шарового крана №%s:\n Производитель: %s\n Материал: %s\n Рукоятка: %s", id, manufacturer, material, lever);
     }
 }

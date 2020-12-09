@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BallValveContent {
-    public static final List<BallValve> ball_valves = new ArrayList<BallValve>();
+    public static final List<BallValve> ball_valves = new ArrayList<>();
 
+    //Создать список с товарами
     static {
         String[] names = {"Royal Thermo Optimal", "Кран шаровой Giacomini", "Кран шаровой газовый Giacomini"};
         String[] manufacturers = {"Royal Thermo", "Giacomini", "Giacomini"};

@@ -30,6 +30,6 @@ public class BallValve {
 
     //Получить характеристики товара в виде строки
     public String getFeatures() {
-        return String.format("Характеристики шарового крана №%s:\n Производитель: %s\n Материал: %s\n Рукоятка: %s", id, manufacturer, material, lever);
+        return String.format("Характеристики шарового крана №%s:\n - Производитель: %s\n - Материал: %s\n - Рукоятка: %s", id, manufacturer, material, lever);
     }
 }
